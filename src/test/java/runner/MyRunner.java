@@ -9,7 +9,8 @@ import io.cucumber.junit.CucumberOptions;
 
 		glue={"stepdefinitions","hooks"},
 		monochrome=true,
-		dryRun=true
+		dryRun=false,
+		tags="smoke"
 		)
 
 public class MyRunner {

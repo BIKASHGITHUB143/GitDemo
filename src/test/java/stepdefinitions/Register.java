@@ -37,6 +37,15 @@ public class Register {
 		driver.findElement(By.id("input-password")).sendKeys(datamap.get("Password"));
 		driver.findElement(By.id("input-confirm")).sendKeys(datamap.get("Password"));
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		System.out.println("Testing1");
 	}
 
 	@And("user selects the privacy policy")
@@ -44,12 +53,15 @@ public class Register {
 	    
 		driver.findElement(By.name("agree")).click();
 		
+		System.out.println("Testing2");
+		
 	}
 
 	@And("user clicks on continue button")
 	public void user_clicks_on_continue_button() {
 		
 		driver.findElement(By.xpath("//input[@value='Continue']")).click();
+		System.out.println("Testing3");
 	    
 	}
 
@@ -57,13 +69,15 @@ public class Register {
 	public void user_account_should_get_created_successfully() {
 		
 		Assert.assertEquals("Your Account Has Been Created!", driver.findElement(By.xpath("//div[@id='content']/h1")).getText());
-	    
+		System.out.println("Testing4");
 	}
 
 	@When("user selects yes for Newsletter")
 	public void user_selects_yes_for_newsletter() {
 		
 		driver.findElement(By.xpath("//input[@name='newsletter'][@value='1']")).click();
+		
+		System.out.println("Testing2");
 	   
 	}
 
